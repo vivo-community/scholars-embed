@@ -1,11 +1,13 @@
 import { join } from 'path';
 import { writeFile } from 'fs';
 
-import * as compression from 'compression';
 import * as express from 'express';
 import * as cors from 'cors';
 
 import { EmbedConfig } from './src/embed.config';
+
+// Import compression
+const compression = require('compression');
 
 // Express server
 const server = express();
